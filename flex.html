@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .container{
+            display:flex;
+            flex-direction: column;
+            
+            background-color: beige;
+        }
+        .container>*
+        {
+            flex:1 100%;
+            border:10px;
+            margin:10px;
+            text-align: center;  
+        }    
+  .header
+  {
+    background-color:crimson;
+    height: 50px;
+
+  }
+  .main
+  {
+    background-color:cyan;
+    height:300px;
+    flex-grow: 3;
+    order:2;
+  }
+  .aside1
+  {
+    order:1;
+    flex:1;
+    background-color:yellow;
+  }
+  .aside2
+  {
+    background-color:pink;
+    flex:1;
+    order:3;
+  }
+  .footer
+  {
+    background-color:lightgreen;
+    height: 50px;
+    order:4;
+  }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+        <div class=""
+        <div class="main">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, amet molestias numquam repellendus doloremque laborum cupiditate iste magni a! Quae, at fuga! Minus pariatur molestiae facilis reprehenderit praesentium fugiat aperiam!
+            </p>
+        </div>
+        <div class="aside1">
+            <h1>aside1</h1>
+        </div>
+        <div class="aside2">
+            <h1>aside2</h1>
+        </div>
+        <div class="footer">
+            <h1>footer</h1>
+        </div>
+    </div>
+</body>
+
+</html>
